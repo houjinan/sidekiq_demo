@@ -5,5 +5,6 @@ class SendMailJob < ActiveJob::Base
 
   def perform(*args)
     # Do something later
+    puts "send mail job test"
   end
 end
