@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
   require 'sidekiq/web'
-  mount Sidekiq::Web => '/sidekiq'
+  # authenticate :user, lambda { |u| u.is_admin? } do
+    mount Sidekiq::Web => '/sidekiq'
+  # end
 end
