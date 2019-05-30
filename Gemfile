@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'redis'
 gem 'sidekiq'
+gem 'sidekiq-status'
 
 gem 'resque'
 
@@ -27,3 +28,5 @@ group :development do
   gem 'spring'
 end
 
+
+gem 'gollum'

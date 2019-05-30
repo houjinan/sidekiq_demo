@@ -3,7 +3,7 @@
 :logfile: ./log/sidekiq.log
 :queues:
   - [default, 1]
-  - [high_priority, 10]
+  - [send_mail, 10]
 staging: 
   :concurrency: 5
 
